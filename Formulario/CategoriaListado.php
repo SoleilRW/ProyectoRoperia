@@ -9,6 +9,8 @@
     </head>
 
     <body>
+    <?php include_once ('includes/_navbar.php'); ?>
+
         <table id="listado_categoria" class="table table-hover" width="100%" cellspacing="0">
             <thead>
                 <tr class="table-primary">
@@ -42,7 +44,7 @@
 
             $(document).ready(function(){
             var table=  $('#listado_categoria').dataTable({
-                "ajax": "http://localhost/proyecto/Formulario/CategoriaBuscar.php?idCategoria=0",
+                "ajax": "http://localhost/proyectos/ProyectoRoperia/Formulario/CategoriaBuscar.php?idCategoria=0",
                 "responsive": true,
                 "columns": [{
                     "data": "idCategoria",

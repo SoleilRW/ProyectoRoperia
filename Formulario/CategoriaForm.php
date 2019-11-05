@@ -29,65 +29,7 @@ p{
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-        
-        <!-- Inicio -->
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio</a>
-        </li>
-
-        <!-- Categoria -->
-        <li class="nav-item active">
-            <a class="nav-link" href="CategoriaForm.php">Categorias<span class="sr-only">(current)</span></a>
-        </li>
-
-        <!-- SubCategoria -->
-        <li class="nav-item active">
-            <a class="nav-link" href="SubCategoriaForm.php">SubCategorias</a>
-        </li>
-
-        <!-- Marca -->
-        <li class="nav-item">
-            <a class="nav-link" href="MarcaForm.php">Marcas</a>
-        </li>
-
-        <!-- Prenda -->
-        <li class="nav-item">
-            <a class="nav-link" href="PrendaForm.php">Prendas</a>
-        </li>
-
-        <!-- Talle -->
-        <li class="nav-item">
-            <a class="nav-link" href="TalleForm.php">Talles</a>
-        </li>
-
-        <!-- Color -->
-        <li class="nav-item">
-            <a class="nav-link" href="ColorForm.php">Colores</a> 
-        </li>
-
-                
-        <!-- Cliente -->
-        <li class="nav-item">
-            <a class="nav-link" href="ClienteForm.php">Clientes</a> 
-        </li>
-
-        <!-- Proveedor -->
-        <li class="nav-item">
-            <a class="nav-link" href="ProveedorForm.php">Proveedores</a> 
-        </li>
-
-
-        </ul>
-
-        <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
-    </form> -->
-    </div>
-    </nav>
+<?php include_once ('includes/_navbar.php'); ?>
 
 <?php
         if(isset($_GET["idCategoria"])) {

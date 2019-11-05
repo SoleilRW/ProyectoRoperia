@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<?php include_once ('includes/_navbar.php'); ?>
     <table id="listado_color" class="display" width="100%" cellspacing="0">
         <thead>
             <tr>
@@ -37,7 +38,7 @@
 
         $(document).ready(function(){
           var table=  $('#listado_color').dataTable({
-            "ajax": "http://localhost/proyecto/BuscarColor.php?idColor=0",
+            "ajax": "http://localhost/proyectos/ProyectoRoperia/BuscarColor.php?idColor=0",
             "responsive": true,
             "columns": [{
                 "data": "idColor",

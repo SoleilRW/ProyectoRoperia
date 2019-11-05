@@ -9,6 +9,7 @@
     </head>
 
     <body>
+    <?php include_once ('includes/_navbar.php'); ?>
         <table id="listado_cliente" class="display" width="100%" cellspacing="0">
             <thead>
                 <tr>
@@ -39,7 +40,7 @@
 
             $(document).ready(function(){
             var table=  $('#listado_cliente').dataTable({
-                "ajax": "http://localhost/proyecto/Formulario/ClienteBuscar.php?idCliente=0",
+                "ajax": "http://localhost/proyectos/ProyectoRoperia/Formulario/ClienteBuscar.php?idCliente=0",
                 "responsive": true,
                 "columns": [{
                     "data": "idCliente",

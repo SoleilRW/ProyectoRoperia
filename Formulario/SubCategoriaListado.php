@@ -9,14 +9,12 @@
 </head>
 
 <body>
-    <table id="listado_cliente" class="display" width="100%" cellspacing="0">
+<?php include_once ('includes/_navbar.php'); ?>
+    <table id="listado_subcategoria" class="display" width="100%" cellspacing="0">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>CI</th>
-                <th>Contacto</th>
+                <th>NombreSubCategoria</th>
 
                 <th></th>
             </tr>
@@ -24,13 +22,13 @@
     </table>
 
     <script>
-        function editar_cliente(data) {
-            window.location.href = './FormCliente.php?idCliente=' + data.id;
+        function editar_SubCategoria(data) {
+            window.location.href = './SubCategoriaForm.php?idSubCategoria=' + data.id;
         }
 
-        function borrar_cliente(data) {
-            $.post("BorrarCliente.php", {
-                idCliente: data.id
+        function borrar_SubCategoria(data) {
+            $.post("SubCategoriaBorrar.php", {
+                idSubCategoria: data.id
             },
             function(data) {
                 alert(data);
@@ -39,41 +37,29 @@
             }
 
         $(document).ready(function(){
-          var table=  $('#listado_cliente').dataTable({
-            "ajax": "http://localhost/proyecto/BuscarCliente.php?idCliente=0",
+          var table=  $('#listado_SubCategoria').dataTable({
+            "ajax": "http://localhost/proyectos/ProyectoRoperia/SubCategoriaBuscar.php?idSubCategoria=0",
             "responsive": true,
             "columns": [{
-                "data": "idcliente",
+                "data": "idSubCategoria",
                 "className": "text-center"
             },
             {
-                "data": "NombreCliente",
-                "className": "text-center"
-            },
-            {
-                "data": "ApellidoCliente",
-                "className": "text-center"
-            },
-            {
-                "data": "CIcliente",
-                "className": "text-center"
-            },
-            {
-                "data": "TelCliente",
+                "data": "NombreSubCategoria",
                 "className": "text-center"
             },
             {
               "data": null,
               "render": function(data) {
-                return "<button type='button' class='btn btn-primary' id=" + data.idCliente + " onclick='editar_cliente(this)'>Editar</button>\
-                <button type='button' class='btn btn-danger' id=" + data.idCliente + " onclick='borrar_cliente(this)'>Borrar</button>"
+                return "<button type='button' class='btn btn-primary' id=" + data.idSubCategoria + " onclick='editar_SubCategoria(this)'>Editar</button>\
+                <button type='button' class='btn btn-danger' id=" + data.idSubCategoria + " onclick='borrar_SubCategoria(this)'>Borrar</button>"
               }  
             }
             ]
         });
         });
     </script>
-<div>    <button type="button" class="btn btn-success" onclick="window.location.href = './FormCliente.php'">Volver</button>
+<div>    <button type="button" class="btn btn-success" onclick="window.location.href = 'SubCategoriaForm.php'">Volver</button>
     </div>
 </body>
 

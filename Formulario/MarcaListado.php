@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<?php include_once ('includes/_navbar.php'); ?>
     <table id="listado_marca" class="display" width="100%" cellspacing="0">
         <thead>
             <tr>
@@ -37,7 +38,7 @@
 
         $(document).ready(function(){
           var table=  $('#listado_marca').dataTable({
-            "ajax": "http://localhost/proyecto/BuscarMarca.php?idMarca=0",
+            "ajax": "http://localhost/proyectos/ProyectoRoperia/BuscarMarca.php?idMarca=0",
             "responsive": true,
             "columns": [{
                 "data": "idMarca",
