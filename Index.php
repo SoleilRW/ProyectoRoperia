@@ -30,43 +30,43 @@
 
         <!-- Categoria -->
         <li class="nav-item active">
-            <a class="nav-link" href="CategoriaForm.php">Categorias</a>
+            <a class="nav-link" href="Formulario/CategoriaForm.php">Categorias</a>
         </li>
 
         <!-- SubCategoria -->
         <li class="nav-item active">
-            <a class="nav-link" href="SubCategoriaForm.php">SubCategorias</a>
+            <a class="nav-link" href="Formulario/SubCategoriaForm.php">SubCategorias</a>
         </li>
 
         <!-- Marca -->
         <li class="nav-item">
-            <a class="nav-link" href="MarcaForm.php">Marcas</a>
+            <a class="nav-link" href="Formulario/MarcaForm.php">Marcas</a>
         </li>
 
         <!-- Prenda -->
         <li class="nav-item">
-            <a class="nav-link" href="PrendaForm.php">Prendas</a>
+            <a class="nav-link" href="Formulario/PrendaForm.php">Prendas</a>
         </li>
 
         <!-- Talle -->
         <li class="nav-item">
-            <a class="nav-link" href="TalleForm.php">Talles</a>
+            <a class="nav-link" href="Formulario/TalleForm.php">Talles</a>
         </li>
 
         <!-- Color -->
         <li class="nav-item">
-            <a class="nav-link" href="ColorForm.php">Colores</a> 
+            <a class="nav-link" href="Formulario/ColorForm.php">Colores</a> 
         </li>
 
                 
         <!-- Cliente -->
         <li class="nav-item">
-            <a class="nav-link" href="ClienteForm.php">Clientes</a> 
+            <a class="nav-link" href="Formulario/ClienteForm.php">Clientes</a> 
         </li>
 
         <!-- Proveedor -->
         <li class="nav-item">
-            <a class="nav-link" href="ProveedorForm.php">Proveedores</a> 
+            <a class="nav-link" href="Formulario/ProveedorForm.php">Proveedores</a> 
         </li>
 
 
