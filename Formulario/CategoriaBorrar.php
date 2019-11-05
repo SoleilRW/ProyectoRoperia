@@ -12,7 +12,7 @@ if ($idCategoria) {
                 echo "Errno: " . $mysqli->errno . "\n";
                 echo "Error: " . $mysqli->error . "\n";
             }else{
-                echo " La Categoria ha sido eliminada del sistema." ;
+                echo " Los datos del categoria han sido eliminados del sistema." ;
             }
             $mysqli->close();
         }
